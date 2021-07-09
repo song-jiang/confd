@@ -16,4 +16,8 @@ require (
 	k8s.io/client-go v0.21.0-rc.0
 )
 
-replace github.com/sirupsen/logrus => github.com/projectcalico/logrus v1.0.4-calico
+replace (
+	github.com/projectcalico/libcalico-go => github.com/song-jiang/libcalico-go v1.6.1-0.20210708134917-57d184e33cef
+	github.com/projectcalico/typha => github.com/song-jiang/typha v0.4.1-0.20210708141241-70e1a375b12a
+	github.com/sirupsen/logrus => github.com/projectcalico/logrus v1.0.4-calico
+)
